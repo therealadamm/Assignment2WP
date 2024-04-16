@@ -1,0 +1,90 @@
+/* CSS for One Page Website */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "content-container"
+        "main-container"
+        "blog-post"
+        "footer";
+    grid-template-rows: auto auto 1fr auto auto; /* Set specific row heights */
+    grid-template-columns: 1fr; /* Full width for each section */
+    min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('https://media.licdn.com/dms/image/D4E16AQFuSf4eE4kArQ/profile-displaybackgroundimage-shrink_350_1400/0/1710959802283?e=1718841600&v=beta&t=UnbtX6t0ZGs0LcvtlirnbWtPnfY2UulC7IBMeDCd0os');
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center the navbar */
+    margin: 10px;
+}
+
+/* Content Container */
+/* Container 1 */
+.container_1 {
+    display: flex; /* Use flexbox to layout the children side by side */
+    justify-content: space-between; /* Space between the children */
+    padding: 20px; /* Adjust as needed */
+}
+
+/* Left paragraph */
+.left-paragraph {
+    flex: 1; /* Allow the left paragraph to take up 50% of the space */
+    margin-right: 20px; /* Add space between the left paragraph and the right picture */
+    background-color: #e0e0e0; /* Background color for visibility */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Right picture */
+.right-picture {
+    flex: 1; /* Allow the right picture to take up 50% of the space */
+    background-color: #d0d0d0; /* Background color for visibility */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Main Container */
+.main-container {
+    grid-area: main-container;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #d0d0d0;
+}
+
+/* Left Menu, Middle Content, and Right Menu */
+.left-menu,
+.middle-content,
+.right-menu {
+    flex: 1;
+    padding: 20px;
+    margin-right: 20px;
+    background-color: #c0c0c0;
+}
+
+/* Blog Post Section */
+.blog-post {
+    grid-area: blog-post;
+    padding: 20px;
+    background-color: #a0a0a0;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    padding: 20px;
+    background-color: #909090;
+    text-align: center;
+}
