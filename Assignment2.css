@@ -23,14 +23,62 @@ body {
     background-image: url('https://media.licdn.com/dms/image/D4E16AQFuSf4eE4kArQ/profile-displaybackgroundimage-shrink_350_1400/0/1710959802283?e=1718841600&v=beta&t=UnbtX6t0ZGs0LcvtlirnbWtPnfY2UulC7IBMeDCd0os');
     padding: 20px;
     background-color: #f0f0f0;
+    
 }
 
 /* Navbar */
 .navbar {
+    /* display: flex; */
+    /* justify-content: center; Center the navbar */
+    /* margin: 10px;  */
+    width: 100%;
     display: flex;
-    justify-content: center; /* Center the navbar */
-    margin: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
 }
+
+.navbar a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.header a.active {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: white;
+    background-color: transparent;
+    
+  }
+
+.logo{
+    display: inline-block;
+    text-align: center;
+    padding: 0 30px;
+    font-size: 30px;
+}
+
+.navbar ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding:0 60px 0 60px   ;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+li a{
+    font-size: 17px;
+}
+
 
 /* Content Container */
 /* Container 1 */
@@ -84,7 +132,20 @@ body {
 /* Footer */
 .footer {
     grid-area: footer;
-    padding: 20px;
+    padding: 15px 50px;
     background-color: #909090;
     text-align: center;
+    position: relative;
+}
+.text{
+    float: left;
+}
+.footer ul{
+    float: right;
+    position: relative;
+    list-style-type: none; /*remove button on li*/
+ 
+}
+.footer a{
+    color: black;
 }
